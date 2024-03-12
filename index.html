@@ -7,33 +7,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
-      <label for="UserName">UserName:</label>
-      <input
-        type="text"
-        placeholder="Nhập Username"
-        name="txtUserName"
-        id="txtUserName"
-      />
-      <label for="Password">Mật Khẩu:</label>
-      <input
-        type="password"
-        placeholder="Nhập Mật Khẩu"
-        name="txtMatKhau"
-        id="txtMatKhau"
-      />
-    </form>
-   
+    <label for="UserName">UserName:</label>
+    <input
+      type="text"
+      placeholder="Nhập Username"
+      name="txtUserName"
+      id="txtUserName"
+    />
   </body>
-  
 </html>
 <script>
   function login() {
     var username = document.getElementById("txtUserName").value;
     var password = document.getElementById("txtPassword").value;
-    
+
     if (username === "admin" && password === "admin") {
-      window.location.href = "home.html"; 
+      window.location.href = "home.html";
       alert("Đăng nhập thành công");
     } else {
       alert("Tên đăng nhập hoặc mật khẩu không đúng!");
